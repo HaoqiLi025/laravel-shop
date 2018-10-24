@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'email_virified',
+        'name', 'email', 'password', 'email_verified',
     ];
 
     /**
@@ -28,6 +28,6 @@ class User extends Authenticatable
     ];
 
     protected $casts = [
-        'email_virified' => 'boolean',
+        'email_verified' => 'boolean',
     ];
 }
